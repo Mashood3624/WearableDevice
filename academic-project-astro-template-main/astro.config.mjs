@@ -9,7 +9,7 @@ import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
-  base: '/WearableDevice/',
+  base: '/WearableDevice/academic-project-astro-template-main',
   integrations: [tailwind(), icon(), mdx(), react(), svelte()],
   markdown: {
     shikiConfig: {
