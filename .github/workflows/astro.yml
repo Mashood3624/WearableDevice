@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write  # REQUIRED to allow GitHub Action to push to gh-pages
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -12,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -29,5 +32,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: academic-project-astro-template-main/dist
           publish_branch: gh-pages
+          publish_dir: academic-project-astro-template-main/dist
