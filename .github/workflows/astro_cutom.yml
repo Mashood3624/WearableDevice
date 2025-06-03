@@ -5,8 +5,9 @@ on:
     branches: [main]
 
 permissions:
-  contents: write  # REQUIRED to allow GitHub Action to push to gh-pages
-
+  contents: read
+  pages: write
+  id-token: write
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
