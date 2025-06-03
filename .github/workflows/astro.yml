@@ -2,12 +2,14 @@ name: Deploy Astro site from subfolder
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main  # 👈 triggers the workflow on push to 'main'
 
 permissions:
-  contents: write
+  contents: write  # 👈 REQUIRED to push to gh-pages
   pages: write
   id-token: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -33,5 +35,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
+          publish_branch: gh-pages  # 👈 creates or updates the 'gh-pages' branch
           publish_dir: academic-project-astro-template-main/dist
