@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Layout.astro
-title: Research Project Page Template
+title: A Wearable Thumb Device for Fruit Firmness Estimation with Vision-Based Tactile Sensing
 description: Simple project page template for your research paper, built with Astro and Tailwind CSS
 favicon: favicon.svg
 thumbnail: screenshot-light.png
@@ -33,35 +33,44 @@ export const components = {pre: CodeBlock, table: Table}
   title={frontmatter.title}
   authors={[
     {
-      name: "Roman Hauksson",
-      url: "https://roman.technology",
-      institution: "Independent",
-      notes: ["*", "†"],
+      name: "Mashood M. Mohsan",
+      url: "https://scholar.google.com/citations?user=WMcSpaAAAAAJ&hl=en",
+      notes: ["*", "1"],
     },
     {
-      name: "Author Two",
-      institution: "Institution Two",
-      notes: ["*", "†"],
+      name: "Basma Hasanen",
+      url: "https://scholar.google.com/citations?user=6ixcL4cAAAAJ&hl=en",
+      notes: ["*", "1"],
     },
     {
-      name: "Author Three",
-      institution: "Institution Three",
-      notes: ["†"],
+      name: "Taimur Hassan",
+      url: "https://scholar.google.com.pk/citations?user=11mwy0YAAAAJ&hl=en",
+      notes: ["2"],
     },
     {
-      name: "Author Four",
-      institution: "Institution Four",
+      name: "Lakmal Seneviratne",
+      url: "https://scholar.google.com/citations?user=MIqCjoIAAAAJ&hl=en",
+      notes: ["1"],
     },
+    {
+      name: "Irfan Hussain",
+      url: "https://scholar.google.com/citations?user=bCC3kdUAAAAJ&hl=en",
+      notes: ["1"],
+    }
   ]}
-  conference="Conference Name"
+  conference="Computers and Electronics in Agriculture"
   notes={[
     {
       symbol: "*",
-      text: "author note one",
+      text: "Equal Contribution",
     },
     {
-      symbol: "†",
-      text: "author note two",
+      symbol: "1",
+      text: "Khalifa University Center for Autonomous Robotic Systems (KUCARS), Khalifa University, UAE",
+    },
+    {
+      symbol: "2",
+      text: "Department of Electrical, Computer and Biomedical Engineering, Abu Dhabi University, UAE",
     },
   ]}
   links={[
@@ -90,13 +99,14 @@ export const components = {pre: CodeBlock, table: Table}
 
 <Video source={outside} />
 
-<HighlightedSection>
+{/* <HighlightedSection> */}
 
 ## Abstract
 
-This is a live demo for a template you can use to create a simple project page for your research paper. See the code for the template and instructions on how to use it yourself [here](https://github.com/RomanHauksson/academic-project-astro-template). It's made with the [Astro web framework](https://astro.build/) and styled with [Tailwind CSS](https://tailwindcss.com/). You write the content in [MDX](https://mdxjs.com/), which enables markdown formatting like **bold**, _italics_, and ~strikethrough~, as well as custom components like <SmallCaps>small caps.</SmallCaps>
-
-</HighlightedSection>
+<div style={{ textAlign: "justify" }}>
+Recent advancements in non-destructive technologies have enabled precise firmness measurement for various fruits, including kiwifruit. However, existing methods remain limited by high costs, environmental sensitivity, and field application impracticality. This work introduces <strong>a novel wearable device for estimating non-destructive fruit firmness</strong>, combining human tactile interaction with vision-based tactile sensing and edge computing. Worn on the thumb, the device leverages embodied intelligence, merging intuitive human touch with the precision of a vision-based tactile sensor. A single-board computer processes tactile images locally, enabling reliable operation even in remote environments. The device employs our proposed deep learning model for real-time firmness predictions from a single palpation, minimizing repetitive handling and reducing fruit bruising. Its ergonomic, symmetrical design supports comfortable use on either hand, enhancing usability. Compact and portable, the device integrates essential components within a housing <strong>measuring 40 mm × 25 mm × 72 mm and weighing only 135 g</strong>. Validated through non-destructive ripeness assessments on 'Hayward' Kiwifruit, the device demonstrated a strong correlation between tactile images and firmness values when paired with our proposed model, achieving <strong> a coefficient of determination (R^2) of 0.89</strong>. This study created a dedicated dataset on Kiwi firmness to support model development and validation.
+</div>
+{/* </HighlightedSection> */}
 
 ## Figures
 
@@ -152,12 +162,13 @@ You can also add LaTeX formulas, rendered during the build process using [KaTeX]
 
 You can add simple tables using [GitHub Flavored Markdown syntax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables):
 
-| Model | Accuracy | F1 score | Training time (hours) |
-| :--- | :---: | :---: | :---: |
-| BERT-base | 0.89 | 0.87 | 4.5 |
-| RoBERTa-large | 0.92 | 0.91 | 7.2 |
-| DistilBERT | 0.86 | 0.84 | 2.1 |
-| XLNet | 0.90 | 0.89 | 6.8 |
+| Sr | Model | MAE | RMSE | R2 |
+| :--- | :---: | :---: | :---: | :---: |
+| 1 | TimesFormer | 0.87 | 4.5 | 0 |
+| 2 | VideoMAE | 0.91 | 7.2 | 0 |
+| :--- | :---: | :---: | :---: | ---: |
+| 3 | Ours Baseline | 0.84 | 2.1 | 0 |
+| 4 | Ours Improved | 0.89 | 6.8 | 0 |
 
 ## BibTeX citation
 
