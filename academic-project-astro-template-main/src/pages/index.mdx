@@ -19,6 +19,7 @@ import LaTeX from "../components/LaTeX.astro";
 import { ImageComparison } from "../components/ImageComparison.tsx";
 
 import outside from "../assets/outside.mp4";
+import short_demo from "../assets/short_demo.mp4";
 import main_fig from "../assets/main.png";
 import wear_fig from "../assets/wear.png";
 import explod_fig from "../assets/exploded.png";
@@ -93,17 +94,17 @@ export const components = {pre: CodeBlock, table: Table}
     {
       name: "Dataset",
       url: "",
-      icon: "academicons:arxiv",
+      icon: "ri:database-2-line",
     },
     {
       name: "Youtube",
       url: "",
-      icon: "ri:bluesky-line"
+      icon: "ri:youtube-line"
     }
   ]}
   />
 
-<Video source={outside} />
+<Video source={short_demo} />
 
 {/* <HighlightedSection> */}
 
@@ -159,6 +160,9 @@ signatures differed significantly.</div>
 </Figure>
 
 ## Results
+
+<div style={{ textAlign: "justify" }}>The proposed model demonstrated a strong correlation between predicted and reference firmness values, achieving an R² score of 0.89 (Figure, left). The residual analysis (Figure, right) shows a random scatter around zero, indicating no systematic bias and suggesting reliable estimation performance across the entire firmness range.</div>
+
 <TwoColumns>
   <Figure slot="left">
     <Image slot="figure" source={r1_fig} altText="Diagram of the transformer deep learning architecture." />
@@ -169,6 +173,14 @@ signatures differed significantly.</div>
 </TwoColumns>
 
 ## Our Related work 
+
+This project builds on our prior research in tactile sensing and fruit firmness estimation. For further exploration of our methods and insights, refer to:
+
+- [SwishFormer for robust firmness and ripeness recognition of fruits using visual tactile imagery (Postharvest Biology and Technology, 2025)](https://doi.org/10.1016/j.postharvbio.2025.113487)
+- [Soft Vision-Based Tactile-Enabled SixthFinger: Advancing Daily Objects Manipulation for Stroke Survivors (RoboSoft, 2025)](https://arxiv.org/abs/2501.06806)
+- [Cross-Modal Knowledge Distillation for Efficient Material Recognition: Aligning Language Descriptions with Tactile Image Models (IEEE IROS WorkShop BoB, 2024)](https://openreview.net/forum?id=EKYZaxzvae)
+
+We encourage readers to explore these works for deeper technical context and complementary advancements.
 
 ## BibTeX citation
 
