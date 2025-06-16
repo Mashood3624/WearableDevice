@@ -19,10 +19,16 @@ import LaTeX from "../components/LaTeX.astro";
 import { ImageComparison } from "../components/ImageComparison.tsx";
 
 import outside from "../assets/outside.mp4";
-import transformer from "../assets/transformer.webp";
+import main_fig from "../assets/main.png";
+import wear_fig from "../assets/wear.png";
+import explod_fig from "../assets/exploded.png";
+import comp_fig from "../assets/comparison.png";
+import data_fig from "../assets/data.png";
+import frame_fig from "../assets/framework.png";
+import r1_fig from "../assets/r1.png";
+import r2_fig from "../assets/r2.png";
+
 import Splat from "../components/Splat.tsx"
-import dogsDiffc from "../assets/dogs-diffc.png"
-import dogsTrue from "../assets/dogs-true.png"
 
 
 import CodeBlock from "../components/CodeBlock.astro";
@@ -58,7 +64,7 @@ export const components = {pre: CodeBlock, table: Table}
       notes: ["1"],
     }
   ]}
-  conference="Computers and Electronics in Agriculture"
+
   notes={[
     {
       symbol: "*",
@@ -85,12 +91,12 @@ export const components = {pre: CodeBlock, table: Table}
       icon: "ri:github-line",
     },
     {
-      name: "arXiv",
+      name: "Dataset",
       url: "",
       icon: "academicons:arxiv",
     },
     {
-      name: "Bluesky",
+      name: "Youtube",
       url: "",
       icon: "ri:bluesky-line"
     }
@@ -101,74 +107,68 @@ export const components = {pre: CodeBlock, table: Table}
 
 {/* <HighlightedSection> */}
 
-## Abstract
+<h2 style={{ textAlign: "center" }}>Abstract</h2>
 
 <div style={{ textAlign: "justify" }}>
 Recent advancements in non-destructive technologies have enabled precise firmness measurement for various fruits, including kiwifruit. However, existing methods remain limited by high costs, environmental sensitivity, and field application impracticality. This work introduces <strong>a novel wearable device for estimating non-destructive fruit firmness</strong>, combining human tactile interaction with vision-based tactile sensing and edge computing. Worn on the thumb, the device leverages embodied intelligence, merging intuitive human touch with the precision of a vision-based tactile sensor. A single-board computer processes tactile images locally, enabling reliable operation even in remote environments. The device employs our proposed deep learning model for real-time firmness predictions from a single palpation, minimizing repetitive handling and reducing fruit bruising. Its ergonomic, symmetrical design supports comfortable use on either hand, enhancing usability. Compact and portable, the device integrates essential components within a housing <strong>measuring 40 mm × 25 mm × 72 mm and weighing only 135 g</strong>. Validated through non-destructive ripeness assessments on 'Hayward' Kiwifruit, the device demonstrated a strong correlation between tactile images and firmness values when paired with our proposed model, achieving <strong> a coefficient of determination (R^2) of 0.89</strong>. This study created a dedicated dataset on Kiwi firmness to support model development and validation.
 </div>
 {/* </HighlightedSection> */}
 
-## Figures
-
-Use the figure component to display images, videos, equations, or any other element, with an optional caption.
-
 <Figure>
-  <Image slot="figure" source={transformer} altText="Diagram of the transformer deep learning architecture." />
-  <span slot="caption">Diagram of the transformer deep learning architecture.</span>
+  <Image slot="figure" source={main_fig} altText="Diagram of the transformer deep learning architecture." />
+  <span slot="caption">The proposed wearable device for real-time, and non-destructive fruit firmness estimation. The user palpates a Kiwi, and
+the proposed model processes the VBTS palpation recording to predict firmness in a non-destructive approach.</span>
 </Figure>
 
-## Image comparison slider
+## Comparison with Conventional Firmness Testing Methods
 
-An interactive, accessible slider component with keyboard navigation.
+<div style={{ textAlign: "justify" }}>For fruits that do not exhibit significant color changes during ripening, firmness serves as a key indicator of ripeness. Existing methods for firmness assessment include mechanical (rupture and durometer), optical, and vibrational techniques. However, these approaches are often invasive or influenced by environmental factors. Our device integrates human dexterity with AI-driven tactile sensing, offering non-destructive, real-time firmness estimation with improved adaptability and accuracy.</div>
 <Figure>
-  <ImageComparison slot="figure" client:load imageUrlOne={dogsDiffc.src} imageUrlTwo={dogsTrue.src} altTextOne="Photo of two dogs running side-by-side in shallow water, lossily compressed using the DiffC algorithm" altTextTwo="Original photo of two dogs running side-by-side in shallow water" />
-  <span slot="caption">A photo of two dogs running side-by-side in shallow water, lossily compressed using the <a href="https://jeremyiv.github.io/diffc-project-page/">DiffC algorithm</a>.</span>
+  <Image slot="figure" source={comp_fig} altText="Diagram of the transformer deep learning architecture." />
 </Figure>
 
-## Two columns
+## Development of Our Device
 
-Use the two columns component to display two columns of content. In this example, the first column contains a figure with a YouTube video and the second column contains a figure with a custom [React](https://react.dev/) component. By default, they display side by side, but if the screen is narrow enough (for example, on mobile), they're arranged vertically.
-
+<div style={{ textAlign: "justify" }}>The device comprises two modules: a thumb unit with a vision-based tactile sensor (VBTS) and a wrist unit housing the control board and user interface in a 3D-printed casing. Adjustable elastic straps ensure comfort and stability. The hardware integrates a Radxa Zero 2 Pro, OLED display, single button, DIGIT sensor, and is powered by a 15W external power bank. A CAD exploded view highlights its modular internal design.</div>
 <TwoColumns>
   <Figure slot="left">
-    <YouTubeVideo slot="figure" videoId="wjZofJX0v4M" />
-    <span slot="caption">Take a look at this YouTube video.</span>
+    <Image slot="figure" source={wear_fig} altText="Diagram of the transformer deep learning architecture." />
   </Figure>
   <Figure slot="right">
-    <Splat slot="figure" client:idle />
-    <span slot="caption">Now look at this <a href="https://en.wikipedia.org/wiki/Gaussian_splatting">Gaussian splat</a>, rendered with a React component.</span>
+    <Image slot="figure" source={explod_fig} altText="Diagram of the transformer deep learning architecture." />
   </Figure>
 </TwoColumns>
 
-## Heading levels
+## Dataset Collection
+<div style={{ textAlign: "justify" }}>A dataset of 530 paired samples was collected from 106 randomly selected kiwifruits using our
+device. Each fruit was palpated at five points (P1–P5) to capture regional firmness variations,
+while ground truth was obtained at two equatorial points (P1–P2 or P3–P4) using a penetrometer. 
+Although soft (0.5 kg/cm²) and firm (3.15 kg/cm²) fruits appeared visually similar, their VBTS 
+signatures differed significantly.</div>
 
-Use headings to divide your content into sections.
+<Figure>
+  <Image slot="figure" source={data_fig} altText="Diagram of the transformer deep learning architecture." />
+</Figure>
 
-### Heading 3
+## Proposed Architecture
 
-Go down a level to heading 3...
+<div style={{ textAlign: "justify" }}>VBTS palpation recordings over n frames are processed by a CNN-based video encoder to extract spatial features. These are linearly projected into 1D representations at each time step and passed to an LSTM to capture temporal dependencies. The LSTM output is fed into a fully connected layer to predict fruit firmness.</div>
 
-#### Heading 4
+<Figure>
+  <Image slot="figure" source={frame_fig} altText="Diagram of the transformer deep learning architecture." />
+</Figure>
 
-...and down again to heading 4.
+## Results
+<TwoColumns>
+  <Figure slot="left">
+    <Image slot="figure" source={r1_fig} altText="Diagram of the transformer deep learning architecture." />
+  </Figure>
+  <Figure slot="right">
+    <Image slot="figure" source={r2_fig} altText="Diagram of the transformer deep learning architecture." />
+  </Figure>
+</TwoColumns>
 
-## LaTeX
-
-You can also add LaTeX formulas, rendered during the build process using [KaTeX](https://katex.org/) so they're quick to load for visitors of your project page. You can write them inline, like this: <LaTeX inline formula="a^2 + b^2 = c^2" />. Or, you can write them as a block:
-
-<LaTeX formula="\int_a^b f(x) dx" />
-
-## Tables
-
-You can add simple tables using [GitHub Flavored Markdown syntax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables):
-
-| Sr | Model | MAE | RMSE | R2 |
-| :--- | :---: | :---: | :---: | :---: |
-| 1 | TimesFormer | 0.87 | 4.5 | 0 |
-| 2 | VideoMAE | 0.91 | 7.2 | 0 |
-| :--- | :---: | :---: | :---: | ---: |
-| 3 | Ours Baseline | 0.84 | 2.1 | 0 |
-| 4 | Ours Improved | 0.89 | 6.8 | 0 |
+## Our Related work 
 
 ## BibTeX citation
 
