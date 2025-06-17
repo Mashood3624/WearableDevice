@@ -27,8 +27,8 @@ A Wearable Thumb Device for Fruit Firmness Estimation with Vision-Based Tactile 
 </p>
 
 <p align="center">
-  <img src="./website/images/Khalifa_logo.png" height="40"/> &nbsp;&nbsp;
-  <img src="./website/images/KUCARS.jpg" height="40"/>
+  <img src="./academic-project-astro-template-main/public/Khalifa_logo.png" height="40"/> &nbsp;&nbsp;
+  <img src="./academic-project-astro-template-main/public/KUCARS.jpg" height="40"/>
 </p>
 
 ---
