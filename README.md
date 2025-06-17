@@ -1,19 +1,14 @@
 <h1 align="center">
-  <img src="./academic-project-astro-template-main/public/ihlab_logo.jpeg" height="100px" alt="iHLab Logo"/>
+  
+  <img src="./academic-project-astro-template-main/public/Khalifa_logo.png" height="50px"/> &nbsp;&nbsp;
+  <img src="./academic-project-astro-template-main/public/ihlab_logo.jpeg" height="50px" alt="iHLab Logo"/> &nbsp;&nbsp;
+  <img src="./academic-project-astro-template-main/public/KUCARS.jpg" height="40px"/>
   <br/>
 </h1>
 
 <h2 align="center">
 A Wearable Thumb Device for Fruit Firmness Estimation with Vision-Based Tactile Sensing
 </h2>
-
-<p align="center">
-  <a href="https://scholar.google.com/citations?user=WMcSpaAAAAAJ&hl=en">Mashood M. Mohsan</a> •
-  <a href="https://scholar.google.com/citations?user=6ixcL4cAAAAJ&hl=en">Basma Hasanen</a> •
-  <a href="https://scholar.google.com.pk/citations?user=11mwy0YAAAAJ&hl=en">Taimur Hassan</a> •
-  <a href="https://scholar.google.com/citations?user=MIqCjoIAAAAJ&hl=en">Lakmal Seneviratne</a> •
-  <a href="https://scholar.google.com/citations?user=bCC3kdUAAAAJ&hl=en">Irfan Hussain</a>
-</p>
 
 <p align="center">
   <a href="https://mashood3624.github.io/WearableDevice/"><b>Project Website</b></a> •
@@ -27,8 +22,7 @@ A Wearable Thumb Device for Fruit Firmness Estimation with Vision-Based Tactile 
 </p>
 
 <p align="center">
-  <img src="./academic-project-astro-template-main/public/Khalifa_logo.png" height="40"/> &nbsp;&nbsp;
-  <img src="./academic-project-astro-template-main/public/KUCARS.jpg" height="40"/>
+  
 </p>
 
 ---
