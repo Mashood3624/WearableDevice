@@ -1,8 +1,8 @@
 <h1 align="center">
   
-  <img src="./academic-project-astro-template-main/public/Khalifa_logo.png" height="50px"/> &nbsp;&nbsp;
-  <img src="./academic-project-astro-template-main/public/ihlab_logo.jpeg" height="50px" alt="iHLab Logo"/> &nbsp;&nbsp;
-  <img src="./academic-project-astro-template-main/public/KUCARS.jpg" height="40px"/>
+  <img src="./images/Khalifa_logo.png" height="50px"/> &nbsp;&nbsp;
+  <img src="./images/ihlab_logo.jpeg" height="50px" alt="iHLab Logo"/> &nbsp;&nbsp;
+  <img src="./images/KUCARS.jpg" height="40px"/>
   <br/>
 </h1>
 
