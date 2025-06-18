@@ -25,12 +25,8 @@ A Wearable Thumb Device for Fruit Firmness Estimation with Vision-Based Tactile 
   
 </p>
 
----
-
-## 🧠 Overview
-
 <div align="center">
-  <img src="./images/overall.png" width="80%" alt="Overview"/>
+  <img src="./images/overview_github.png" width="80%" alt="Overview"/>
 </div>
 
 The proposed wearable device for real-time, and non-destructive fruit firmness estimation. The user palpates a Kiwi, and the proposed model processes the VBTS palpation recording to predict firmness in a non-destructive approach.
