@@ -78,8 +78,7 @@ python main.py ./configs/config_001.json
 ### 6. Demonstration of On-Tree Firmness Estimation
 
 <div align="Center">
-    <h3>Fruit Sorting using SwishFormer </h3>
-  <img src="./website/videos/fruit_sorting.gif"
+  <img src="./images/demo_github.gif"
   width="80%">
 </div>
 
