@@ -22,7 +22,7 @@
     "@react-three/fiber": "^8.16.8",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "astro": "^5.4.1",
+    "astro": "^5.9.4",
     "astro-icon": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
