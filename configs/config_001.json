@@ -1,0 +1,17 @@
+{
+    "output_dir": "./weights/exp_001",
+    "video_model": "CNNLSTM",
+    "LSTM_hidden_size": 128,
+    "LSTM_layers": 1,
+    "data_root": "./dataset",
+    "data_csv": "./dataset/dataset.csv",
+    "sample_duration": 16,
+    "per_device_train_batch_size": 8,
+    "per_device_eval_batch_size": 8,
+    "learning_rate": 0.00005,
+    "weight_decay": 0.00005,
+    "optim_name": "RMS",
+    "CNN_LSTM_loss_fnc": "Huberloss",
+    "num_train_epochs": 1,
+    "pre_trained_weights": true
+}
