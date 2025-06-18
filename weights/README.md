@@ -1,3 +1,3 @@
-<h1 align="center">
+<h2 align="center">
 Place CNN Encoder weights here & Training weights will be saved here
-</h1>
+</h2>
