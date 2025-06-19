@@ -86,9 +86,9 @@ python main.py ./configs/config_001.json
 
 This project builds on our prior research in tactile sensing and fruit firmness estimation. For further exploration of our methods and insights, refer to:
 
-- [SwishFormer for robust firmness and ripeness recognition of fruits using visual tactile imagery (Postharvest Biology and Technology, 2025)](https://doi.org/10.1016/j.postharvbio.2025.113487)
-- [Soft Vision-Based Tactile-Enabled SixthFinger: Advancing Daily Objects Manipulation for Stroke Survivors (RoboSoft, 2025)](https://arxiv.org/abs/2501.06806)
-- [Cross-Modal Knowledge Distillation for Efficient Material Recognition: Aligning Language Descriptions with Tactile Image Models (IEEE IROS WorkShop BoB, 2024)](https://openreview.net/forum?id=EKYZaxzvae)
+- [SwishFormer for robust firmness and ripeness recognition of fruits using visual tactile imagery (Postharvest Biology and Technology, 2025)](https://doi.org/10.1016/j.postharvbio.2025.113487): Robot palpation-based fruit sorting is performed using the proposed SwishFormer algorithm, which processes vision-based tactile sequences via a hardswish-activated transformer and Random Forest regressor. The system achieves a 96.6–98.3% ripeness classification success and up to 13.69% R² improvement with 2× fewer parameters than prior models.
+- [Soft Vision-Based Tactile-Enabled SixthFinger: Advancing Daily Objects Manipulation for Stroke Survivors (RoboSoft, 2025)](https://arxiv.org/abs/2501.06806): Presents a soft robotic finger with integrated vision-based tactile sensing for autonomous grip adjustment via slippage detection. A transformer-based model trained on diverse tactile data enables robust object manipulation for stroke survivors across varied real-world tasks.
+- [Cross-Modal Knowledge Distillation for Efficient Material Recognition: Aligning Language Descriptions with Tactile Image Models (IEEE IROS WorkShop BoB, 2024)](https://openreview.net/forum?id=EKYZaxzvae): Aligning Language Descriptions with Tactile Image Models (IEEE IROS WorkShop BoB, 2024): Proposes a cross-modal distillation framework where a BART language model transfers semantic knowledge to a ViT-based tactile image model for material recognition. The distilled ViT achieves 74.70% accuracy (↑16.87%) and is validated through real-world UR10 robot experiments.
 
 We encourage readers to explore these works for deeper technical context and complementary advancements.
 
