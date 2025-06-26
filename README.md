@@ -99,14 +99,16 @@ The website was built using  <a href="https://github.com/RomanHauksson/academic-
 
 ## Bibtex
 ```
-@article{mohsan2025swishformer,
-      title={SwishFormer for robust firmness and ripeness recognition of fruits using visual tactile imagery},
-      author={Mohsan, Mashood M and Hasanen, Basma B and Hassan, Taimur and Din, Muhayy Ud and Werghi, Naoufel and Seneviratne, Lakmal and Hussain, Irfan},
-      journal={Postharvest Biology and Technology},
-      volume={225},
-      pages={113487},
-      year={2025},
-      publisher={Elsevier}
-    }
+@article{MOHSAN2025110593,
+title = {A wearable thumb device for fruit firmness estimation with vision-based tactile sensing},
+journal = {Computers and Electronics in Agriculture},
+volume = {237},
+pages = {110593},
+year = {2025},
+issn = {0168-1699},
+doi = {https://doi.org/10.1016/j.compag.2025.110593},
+url = {https://www.sciencedirect.com/science/article/pii/S0168169925006994},
+author = {Mashood M. Mohsan and Basma B. Hasanen and Taimur Hassan and Lakmal Seneviratne and Irfan Hussain}
+}
 ```
 
