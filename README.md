@@ -12,9 +12,10 @@ A Wearable Thumb Device for Fruit Firmness Estimation with Vision-Based Tactile 
 
 <p align="center">
   <a href="https://mashood3624.github.io/WearableDevice/"><b>Project Website</b></a> •
-  <a href="https://www.sciencedirect.com/science/article/pii/S0925521425000997"><b>Paper</b></a> •
+  <a href="https://mashood3624.github.io/WearableDevice/paper.pdf"><b>Paper</b></a> •
+  <a href="https://doi.org/10.1016/j.compag.2025.110593"><b>DOI</b></a> •
   <a href="https://1drv.ms/u/s!ApqqDy-MtRnr7ZNqhgBw2g6snSRObA?e=B8JfiM"><b>Dataset</b></a> •
-  <a href="https://www.youtube.com/watch?v=rfSmYwNcWEg"><b>Video</b></a>
+  <a href="https://youtu.be/MaLs7fFNrok?si=vRf5nCoIOY40dm-0"><b>Video</b></a>
 </p>
 
 <p align="center">
